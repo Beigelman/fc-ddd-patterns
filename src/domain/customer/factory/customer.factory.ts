@@ -4,6 +4,7 @@ import Address from "../value-object/address";
 
 export default class CustomerFactory {
   public static create(name: string): Customer {
+    
     return new Customer(uuid(), name);
   }
 
